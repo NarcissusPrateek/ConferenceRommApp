@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   xmlns:tools="http://schemas.android.com/tools"
+								   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginStart="10dp"
+                                   android:layout_marginTop="5dp"
+								   android:backgroundTint="#EEF1F7"
+                                   android:layout_marginEnd="10dp"
+                                   android:layout_marginBottom="5dp"
+                                   app:cardBackgroundColor="@android:color/white"
+                                   app:cardCornerRadius="20dp">
+
+
+	<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+
+		<TextView
+				android:layout_marginTop="20dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/Cname"
+				android:text=" Name :"
+				android:layout_marginLeft="25dp"
+				android:textColor="#303030"
+				android:textSize="20sp"/>
+
+		<TextView
+				android:layout_toRightOf="@id/Cname"
+				android:layout_marginTop="20dp"
+				android:id="@+id/txv_room"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Conference Name"
+				android:layout_marginLeft="100dp"
+				android:textColor="#303030"
+				android:textSize="20sp"/>
+
+	</RelativeLayout>
+	<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="10dp">
+		<TextView
+				android:paddingTop="30dp"
+				android:id="@+id/Ccapacity"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Capacity :"
+				android:layout_marginTop="20dp"
+				android:layout_marginLeft="30dp"
+				android:textColor="#303030"
+				android:textSize="20sp"
+				android:paddingBottom="20dp"
+		/>
+
+
+		<TextView
+				android:paddingTop="30dp"
+				android:layout_toRightOf="@id/Ccapacity"
+
+				android:id="@+id/txv_room_capacity"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Capacity"
+				android:layout_marginTop="20dp"
+				android:layout_marginLeft="100dp"
+				android:textColor="#303030"
+				android:textSize="20sp"
+				android:paddingBottom="20dp"
+		/>
+
+	</RelativeLayout>
+</androidx.cardview.widget.CardView>

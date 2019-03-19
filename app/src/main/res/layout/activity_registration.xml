@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".RegistrationActivity">
+
+
+    <!--<include layout="@layout/toolbar"></include>-->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:paddingRight="20dp" >
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+            <EditText
+                    android:id="@+id/textView_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:drawableStart="@drawable/ic_person_black_24dp"
+                    android:drawableLeft="@drawable/ic_person_add_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:maxLength="50"
+                    android:ellipsize="end"
+                    android:hint="Name"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+            <EditText
+                    android:id="@+id/edittext_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:drawableStart="@drawable/ic_fingerprint_black_24dp"
+                    android:drawableLeft="@drawable/ic_fingerprint_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:maxLength="50"
+                    android:ellipsize="end"
+                    android:hint="Employee ID"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:ems="10"
+                app:ms_arrowColor="@color/colorAccent"
+                app:ms_arrowSize="16dp"
+                app:ms_floatingLabelColor="#A9A9A9"
+                app:ms_floatingLabelText="Select Role"
+                app:ms_hint="Select Role"
+                app:ms_multiline="true"
+                app:ms_hintColor="#000000"
+                android:layout_marginTop="15dp"
+        ></fr.ganfra.materialspinner.MaterialSpinner>
+
+
+        <Button android:id="@+id/button_add"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="40dp"
+                android:textColor="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+<!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="Profile Details "
+                android:textStyle="normal"
+                android:textSize="30sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#242B53"/>
+    </RelativeLayout>
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:hint="Name"
+            android:backgroundTint="#242B53"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView_name"
+            android:singleLine="true"/>
+
+    <EditText
+            android:hint="Nineleaps Id"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            android:backgroundTint="#242B53"
+            android:layout_marginRight="60dp"
+            android:layout_below="@+id/textView_name"
+            android:id="@+id/edittext_id"
+            android:singleLine="true"/>
+    <Spinner
+            android:popupBackground="#D2D2DA"
+            android:layout_marginStart="60dp"
+            android:backgroundTint="#9596A0"
+            android:background="@color/colorAccent"
+            android:layout_below="@id/edittext_id"
+            android:id="@+id/spinner"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:visibility="visible"
+            android:layout_marginEnd="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="26dp">
+
+    </Spinner>
+    <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:text="Submit"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:textColor="#242B53"
+            android:background="@drawable/buttonsubmit"
+            android:id="@+id/button_add"
+            android:layout_below="@+id/spinner"
+            android:layout_centerHorizontal="true"
+    />-->

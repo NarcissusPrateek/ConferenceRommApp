@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#EEF1F7"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="10dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:paddingRight="20dp" >
+            <TextView
+                    android:id="@+id/room_name_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000"
+                    android:maxLines="1"
+                    android:paddingRight="150dp"
+                    android:ellipsize="end"
+                    android:drawableStart="@drawable/ic_room_black_24dp"
+                    android:drawableLeft="@drawable/ic_room_black_24dp"
+                    android:textSize="20dp"
+                    android:drawablePadding="15dp"
+                    android:maxLength="50"
+                    android:hint="Room Name"/>
+            <TextView
+                    android:id="@+id/conference_room_capacity_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="3dp"
+                    android:inputType="text"
+                    android:hint="Capacity"
+                    android:drawableStart="@drawable/ic_group_black_24dp"
+                    android:drawableLeft="@drawable/ic_group_black_24dp"
+                    android:drawablePadding="15dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+    <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+
+        <!--<TextView-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/Cname"-->
+                <!--android:text=" Name :"-->
+                <!--android:layout_marginLeft="25dp"-->
+                <!--android:textColor="#303030"-->
+                <!--android:textSize="20sp"/>-->
+
+        <!--<TextView-->
+                <!--android:layout_toRightOf="@id/Cname"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:id="@+id/conferenceRoomName"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Conference Name"-->
+                <!--android:layout_marginLeft="100dp"-->
+                <!--android:textColor="#303030"-->
+                <!--android:textSize="20sp"/>-->
+
+    <!--</RelativeLayout>-->
+    <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginTop="10dp">-->
+        <!--<TextView-->
+                <!--android:paddingTop="30dp"-->
+                <!--android:id="@+id/Ccapacity"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Capacity :"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:textColor="#303030"-->
+                <!--android:textSize="20sp"-->
+                <!--android:paddingBottom="20dp"-->
+        <!--/>-->
+
+
+        <!--<TextView-->
+            <!--android:paddingTop="30dp"-->
+            <!--android:layout_toRightOf="@id/Ccapacity"-->
+
+            <!--android:id="@+id/conference_room_capacity"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Capacity"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:textColor="#303030"-->
+            <!--android:textSize="20sp"-->
+            <!--android:paddingBottom="20dp"-->
+        <!--/>-->
+
+    <!--</RelativeLayout>-->
+

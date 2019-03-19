@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        tools:context=".Activity.UserInputActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:paddingRight="20dp" >
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp">
+
+            <EditText
+                    android:id="@+id/Purpose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:drawableStart="@drawable/pencil"
+                    android:drawableLeft="@drawable/pencil"
+                    android:drawablePadding="5dp"
+                    android:maxLength="50"
+                    android:hint="Purpose"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp">
+
+            <EditText
+                    android:id="@+id/fromTime_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:focusable="false"
+                    android:drawableStart="@drawable/ic_schedule_black_24dp"
+                    android:drawableLeft="@drawable/ic_schedule_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:maxLength="50"
+                    android:hint="From-Time"/>
+            <!--android:ellipsize="end"-->
+            <!--android:singleLine="true"-->
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_input_layout_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp">
+            <EditText
+                    android:id="@+id/toTime_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:hint="To-Time"
+                    android:drawableStart="@drawable/ic_schedule_black_24dp"
+                    android:drawableLeft="@drawable/ic_schedule_black_24dp"
+                    android:drawablePadding="5dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp">
+            <EditText android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:ems="10"
+                      android:focusable="false"
+                      android:id="@+id/date_block"
+                      android:hint="Date"
+                      android:drawableStart="@drawable/ic_today_black_24dp"
+                      android:drawableLeft="@drawable/ic_today_black_24dp"
+                      android:drawablePadding="5dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buiding_Spinner"
+                android:ems="10"
+                app:ms_arrowColor="@color/colorAccent"
+                app:ms_arrowSize="16dp"
+                app:ms_floatingLabelColor="#A9A9A9"
+                app:ms_floatingLabelText="Select Building"
+                app:ms_multiline="true"
+                app:ms_hintColor="#000000"
+                android:layout_marginTop="0dp"
+        ></fr.ganfra.materialspinner.MaterialSpinner>
+        <fr.ganfra.materialspinner.MaterialSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/conference_Spinner"
+                android:ems="10"
+                app:ms_arrowColor="@color/colorAccent"
+                app:ms_arrowSize="16dp"
+                app:ms_floatingLabelColor="#A9A9A9"
+                app:ms_floatingLabelText="Select Room"
+                app:ms_multiline="true"
+                app:ms_hintColor="#000000"
+                android:layout_marginTop="0dp"
+        ></fr.ganfra.materialspinner.MaterialSpinner>
+        <Button android:id="@+id/block_conference"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="BLOCK"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>
+

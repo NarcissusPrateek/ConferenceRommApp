@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".SignIn"
+              android:orientation="vertical"
+              android:background="@drawable/backgroundfrom">
+    <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical">
+
+        <!--meeting111-->
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/nineleaps_madhur"
+                />
+                   <!--android:src="@drawable/nineleapslogo1"-->
+
+        <TextView
+                android:textColor="@color/lightdarkOrange"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="WE GIVE WINGS TO IDEAS, BRINGING PRODUCTS TO LIFE"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_marginTop="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/l2"
+            android:layout_marginTop="135dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+        <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+
+
+</LinearLayout>

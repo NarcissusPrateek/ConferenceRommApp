@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#EEF1F7"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+
+                android:layout_marginTop="20dp"
+                android:id="@+id/conferenceRoomName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conference Name"
+                android:drawableStart="@drawable/ic_room_black_24dp"
+                android:drawableLeft="@drawable/ic_room_black_24dp"
+                android:drawablePadding="5dp"
+                android:layout_marginLeft="30dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:paddingRight="150dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+        <TextView
+                android:paddingTop="30dp"
+                android:id="@+id/buildingname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Building Name"
+                android:drawableLeft="@drawable/ic_building_black_24dp"
+                android:drawableStart="@drawable/ic_building_black_24dp"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:paddingRight="150dp"
+                android:paddingBottom="20dp"
+        />
+        <Button
+                android:text="Unblock"
+                android:layout_width="wrap_content"
+                android:id="@+id/unblock"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_alignLeft="@+id/buildingname"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/buttonsubmit"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="190dp"
+        />
+
+    </RelativeLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!---->
+    <!--android:layout_marginLeft="300dp">-->
+
+    <!---->
+    <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+</androidx.cardview.widget.CardView>

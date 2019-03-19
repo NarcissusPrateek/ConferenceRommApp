@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<LinearLayout
+        android:id="@+id/name"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+    <TextView
+            android:background="@drawable/ic_person_black_24dp"
+            android:textSize="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"/>
+    <TextView
+            android:text="Employee Name"
+            android:textSize="20dp"
+            android:layout_marginStart="40dp"
+            android:textColor="#000000"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingRight="80dp"
+            android:id="@+id/textView_name"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"/>
+</LinearLayout>
+
+<LinearLayout
+        android:id="@+id/building"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/name"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+            android:background="@drawable/ic_building_black_24dp"
+            android:textSize="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"/>
+    <TextView
+            android:text="Building Name"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingRight="80dp"
+            android:layout_marginStart="40dp"
+            android:textColor="#000000"
+            android:id="@+id/textView_buildingname"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+</LinearLayout>
+
+<LinearLayout
+        android:id="@+id/room"
+        android:layout_below="@id/building"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+            android:background="@drawable/ic_room_black_24dp"
+            android:textSize="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+    <TextView
+            android:text="Room Name"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingRight="80dp"
+            android:layout_marginStart="40dp"
+            android:textColor="#000000"
+            android:id="@+id/textView_conf_name"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+</LinearLayout>
+<LinearLayout
+        android:id="@+id/date"
+        android:layout_below="@+id/room"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+            android:background="@drawable/ic_today_black_24dp"
+            android:textSize="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+    <TextView
+            android:text="Date"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingRight="80dp"
+            android:layout_marginStart="40dp"
+            android:textColor="#000000"
+            android:id="@+id/textView_date"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+</LinearLayout>
+
+<LinearLayout
+        android:id="@+id/fromTime"
+        android:layout_below="@id/date"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+            android:textSize="20dp"
+            android:background="@drawable/ic_schedule_black_24dp"
+            android:layout_marginStart="20dp"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+    <TextView
+            android:text="From"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingRight="80dp"
+            android:layout_marginStart="40dp"
+            android:textColor="#000000"
+            android:id="@+id/textView_from_time"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+</LinearLayout>
+
+
+<RelativeLayout
+        android:id="@+id/purpose"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/fromTime"
+        android:layout_height="wrap_content">
+
+    <TextView
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_local_offer_black_24dp"
+            android:textSize="20dp"
+            android:id="@+id/tag"
+            android:layout_marginStart="20dp"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"/>
+    <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:maxLength="50"
+            android:paddingRight="80dp"
+            android:hint="Purpose"
+            android:layout_toRightOf="@id/tag"
+            android:id="@+id/editText_purpose"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="10dp"
+            app:met_floatingLabel="normal" />
+
+
+</RelativeLayout>
+<RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/add_members"
+        android:layout_width="match_parent"
+        android:layout_below="@id/purpose"
+        android:layout_height="wrap_content">
+
+    <ImageButton
+            android:id="@+id/button_add_members"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_person_add_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Persons"
+            android:editable="false"
+            android:layout_toRightOf="@id/button_add_members"
+            android:id="@+id/editText_person"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="10dp"
+            app:met_floatingLabel="normal" />
+
+
+
+</RelativeLayout>
+<LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@id/add_members"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:layout_height="wrap_content">
+
+    <Button android:id="@+id/book_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="SUBMIT"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"/>
+    <!--<Button-->
+            <!--android:text="Book"-->
+            <!--android:layout_weight="40"-->
+            <!--&lt;!&ndash;android:id="@+id/book_button"&ndash;&gt;-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@drawable/buttonsubmit"-->
+            <!---->
+            <!--android:layout_height="50dp"/>-->
+</LinearLayout>
+</RelativeLayout>
+
+
+
